@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+#ignore all of .idea/
+.idea/
+
+#sensitive connection info
+*.properties
