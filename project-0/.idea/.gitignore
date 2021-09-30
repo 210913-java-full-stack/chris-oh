@@ -5,5 +5,5 @@
 #ignore all of .idea/
 .idea/
 
-#sensitive connection info
+#sensitive info
 *.properties
