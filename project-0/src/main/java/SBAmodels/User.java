@@ -24,6 +24,7 @@ public class User {
         this.password = password;
     }
 
+
     public String getUserName() {
         return userName;
     }
@@ -54,6 +55,8 @@ public class User {
     public String toString() {
         return "U: " + this.userName + " P: " + this.password;
     }
+
+    //Displays All Available info and or informs what is missing
     public void fullInfo() {
         System.out.println("U: " + this.userName +"\nP: "
                 + this.password

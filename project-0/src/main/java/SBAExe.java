@@ -1,10 +1,11 @@
 import SBAdaos.MoneyDAO;
 import SBAmodels.Money;
 import SBAutils.*;
-
+import UI.MainMenu;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+
 
 public class SBAExe {
     public static void main(String[] args) throws SQLException, IOException {
@@ -35,14 +36,14 @@ public class SBAExe {
        // }
 
 
-        //UI run = new UI();
-        //run.initiate();
-        Connection conn = ConnMan.getConn();
-        MoneyDAO md = new MoneyDAO(conn);
-        Validator v = new Validator();
-        if (v.accountExist("test", conn)) {
-            System.out.println("true");
-        }
+        MainMenu run = new MainMenu();
+        run.initiate();
+//        Connection conn = ConnMan.getConn();
+//        MoneyDAO md = new MoneyDAO(conn);
+//        Validator v = new Validator();
+//        if (v.accountExist("test", conn)) {
+//            System.out.println("true");
+//        }
 //        md.get("use");
 ////        CusArrLis<Money> test = new CusArrLis<>();
 ////        test = md.lReturner();

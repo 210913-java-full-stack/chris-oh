@@ -13,9 +13,13 @@ public class ConnMan {
     private ConnMan() {
 
     }
+
+    //Creates new connection if it doesn't exist or returns the existing one if it does
     public static Connection getConn() throws IOException, SQLException {
         if (conn == null) {
             Properties props = new Properties();
+
+            //Connection Information is hidden to GitHub
             FileReader connProp = new FileReader("src/main/resources/conn.properties");
             props.load(connProp);
 
